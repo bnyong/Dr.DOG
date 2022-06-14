@@ -1,0 +1,274 @@
+  @import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(bannerTop.css);
+
+
+
+/* _______________ Section */
+
+
+/* __________ section 1 */
+#section1{
+  width:100%;
+  height:900px;
+  background:rgb(247, 245, 245);
+}
+.section1_1{
+  width:1300px;
+  margin:0 auto;
+  position:relative;
+}
+h2{
+  font-size:45px;
+  font-weight:700;
+  margin-left:20px;
+  padding-top:60px;
+  padding-bottom:50px;
+  border-bottom:1px solid #000;
+  color:#323232;
+}
+.section1_1 div ul li{
+  float:left;
+  margin-top:100px;
+  padding-left:20px;
+  position:relative;
+}
+.section1_1 div ul li:not(last-child){margin-right:70px;}
+.section1_1 div ul li:first-child p:first-child{
+  font-size:25px;
+  font-weight:900;
+  text-transform:uppercase;
+  color:#434343
+}
+.section1_1 div ul li:first-child p:last-child{
+  font-size:28px;
+  font-weight:600;
+  line-height:100px;
+  color:#434343;
+}
+/* coupon */
+.section1_1 div ul li:not(:first-child) p{position:absolute;}
+.section1_1 div ul li:not(:first-child) p:first-of-type{
+  font-weight:900;
+  font-size:18px;
+  color:#F25E3D;
+  top:30px;
+  left:145px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.section1_1 div:nth-child(3) ul li:nth-of-type(2) p:first-of-type{left:105px;}
+.section1_1 div:nth-child(3) ul li:nth-of-type(3) p:first-of-type{left:150px;}
+/* coupon 중앙 */
+.section1_1 div ul li:not(:first-child) p:nth-of-type(2){
+  top:70px;
+  left:100px;
+  font-size:30px;
+  font-weight:900;
+  color:#434343;
+}
+.section1_1 div:nth-child(3) ul li:nth-of-type(3) p:nth-of-type(2){left:120px;}
+/* coupon 하단 */
+.section1_1 div ul li:not(:first-child) p:last-of-type{
+  top:120px;
+  left:98px;
+  color:rgb(148, 148, 148);
+}
+.section1_1 div:nth-child(2) ul li:nth-of-type(2) p:nth-of-type(3){left:115px;}
+.section1_1 div:nth-child(3) ul li:nth-of-type(3) p:nth-of-type(3){left:140px;}
+
+/* 버튼 */
+.section1_1 .btn{
+  position:absolute;
+  bottom:-150px;
+  left:500px;
+  color:#434343;
+  border:1px solid rgb(242, 94, 61, 0.4);
+  padding:20px 60px;
+  border-radius:15px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:all 0.3s;
+}
+.section1_1 .btn:hover{
+  background:rgb(155, 155, 155);
+  color:#fff;
+}
+
+/* __________ section 2 */
+#section2{
+  width:1300px;
+  height:800px;
+  margin:60px auto;
+}
+h3{
+  font-size:35px;
+  font-weight:700;
+  margin-left:20px;
+  padding-top:60px;
+  padding-bottom:25px;
+  border-bottom:1px solid #000;
+  color:#323232;
+  line-height:30px;
+}
+h3 span{
+  font-size:16px;
+  margin-left:10px;
+  color:rgb(155, 155, 155);
+}
+
+/* 등급 */
+#section2 ul li{
+  float:left;
+  margin-right:20px;
+  margin-top:50px;
+  box-shadow:0px 2px 7px rgba(0, 0, 0, 0.4);
+  transition:all 0.3s;
+}
+#section2 ul li:hover{box-shadow:0px 2px 7px rgba(0, 0, 0, 0.8);}
+#section2 ul li>p:nth-of-type(1){font-weight:900;font-size:16px;}
+#section2 ul li img{
+  position:absolute;
+  left:110px;
+  top:50px;
+}
+#section2 ul li:not(:first-child)>p:nth-of-type(2){
+  position:absolute;
+  top:300px;
+  left:120px;
+  font-size:28px;
+  font-weight:900;
+  line-height:28px;
+  color:#F25E3D;
+}
+#section2 ul li:not(:first-child)>p:nth-of-type(2) span{
+  font-size:16px;
+  font-weight:bold;
+  margin-left:30px;
+  color:#434343;
+}
+#section2 ul li:not(:first-child) div>img{
+  position:absolute;
+  top:370px;
+  left:60px;
+}
+#section2 ul li:not(:first-child) div p:nth-of-type(1){
+  position:absolute;
+  top:400px;
+  left:140px;
+  font-size:28px;
+  color:#F25E3D;
+  font-weight:900;
+}
+#section2 ul li:not(:first-child) div p:nth-of-type(1) span{
+  font-size:18px;
+}
+#section2 ul li:not(:first-child) div p:nth-of-type(2){
+  position:absolute;
+  top:465px;
+  left:125px;
+  font-size:16px;
+  font-weight:bold;
+  color:#434343;
+}
+/* normal 등급 */
+#section2 ul li:first-of-type{
+  margin-left:20px;
+  background:#F3F1F2;
+  width:300px;
+  height:550px;
+  position:relative;
+}
+#section2 ul li:first-of-type p:first-of-type{
+  position:absolute;
+  left:105px;
+  top:130px;
+  color:#434343;
+}
+#section2 ul li:first-of-type p:nth-of-type(2){
+  position:absolute;
+  top:250px;
+  left:120px;
+  font-size:16px;
+  font-weight:bold;
+  color:#434343;
+}
+#section2 ul li:first-of-type p:nth-of-type(3){
+  position:absolute;
+  top:400px;
+  left:120px;
+  font-size:16px;
+  font-weight:bold;
+  color:#434343;
+}
+/* bronze 등급 */
+#section2 ul li:nth-of-type(2){
+  background:#EEF3F7;
+  width:300px;
+  height:550px;
+  position:relative;
+}
+#section2 ul li:nth-of-type(2)>p:first-of-type{
+  position:absolute;
+  left:98px;
+  top:130px;
+  color:#434343;
+}
+#section2 ul li:nth-of-type(2)>p:nth-of-type(2){
+  position:absolute;
+  top:230px;
+  left:88px;
+}
+/* Silver 등급 */
+#section2 ul li:nth-of-type(3){
+  background:#F8EFE8;
+  width:300px;
+  height:550px;
+  position:relative;
+}
+#section2 ul li:nth-of-type(3)>p:first-of-type{
+  position:absolute;
+  left:110px;
+  top:130px;
+  color:#434343;
+}
+#section2 ul li:nth-of-type(3)>p:nth-of-type(2){
+  position:absolute;
+  top:230px;
+  left:88px;
+}
+/* gold 등급 */
+#section2 ul li:last-of-type{
+  background:#F8E5E7;
+  width:300px;
+  height:550px;
+  position:relative;
+}
+#section2 ul li:last-of-type>p:first-of-type{
+  position:absolute;
+  left:112px;
+  top:130px;
+  color:#434343;
+}
+#section2 ul li:last-of-type>p:nth-of-type(2){
+  left:88px;
+  top:230px;
+}
+
+/* __________ section 3 */
+#section3{width:1300px;margin:0 auto 60px;background:rgb(247, 245, 245);padding:20px;}
+#section3 h4{
+  font-size:18px;
+  font-weight:bold;
+  margin-left:20px;
+  color:#666666;
+}
+#section3 ul{margin-top:15px;}
+#section3 ul li{
+  margin-bottom:10px;
+  color:#434343;
+  list-style-type: disc;
+  margin-left:15px;
+}

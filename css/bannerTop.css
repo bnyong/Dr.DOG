@@ -1,0 +1,135 @@
+
+/* _______________ banner style */
+
+
+/* _______________ top button */
+
+#topBtn{
+  position:fixed;
+  right:45px;
+  bottom:45px;
+  z-index:9000;
+}
+#topBtn a.goTop{
+  display:block;
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:url(../image/top.png) no-repeat;
+  transition:all 0.5s;
+}
+#topBtn a.goTop:hover{
+  box-shadow:0px 0px 4px #000;
+  background:url(../image/top_on.png) no-repeat;
+}
+
+/* _______________ 전화하기 버튼 */
+
+#phoneBtn{
+  position:fixed;
+  right:45px;
+  bottom:145px;
+  z-index:1000;
+  width:110px;
+  height:auto;
+  /* background:pink; */
+}
+#phoneBtn .phoneBtn_box{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  background:#E9F2EB;
+  float:right;
+  overflow:hidden;
+  text-align:center;
+}
+#phoneBtn .phoneBtn_box a{
+  color:#000;
+  line-height:70px;
+  font-size:20px;
+}
+#phoneBtn .icon{
+  color:#000;
+  font-size:45px;
+  text-align:right;
+  vertical-align:middle;
+  /* background:#fff; */
+  border-radius:50%;
+}
+#phoneBtn .phoneBtn_box a .phone_hover{
+  display:none;
+  width:80px;
+  text-align:center;
+  font-weight:bold;
+  vertical-align:top;
+}
+
+/* _______________ 왼쪽 배너 부분 */
+
+.leftBanner{
+	width:100px;
+	height:170px;
+	background:#F27457;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	position:fixed;
+	left:0px;
+  top:40%;
+  border-radius:0 15px 15px 0;
+	z-index:2000;
+}
+.leftBanner .shapeLeft{
+	display:block;
+	width:25px;
+	height:50px;
+	background:#79b97d;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	border-radius:0px 5px 5px 0;
+	position:absolute;
+	top:60px;
+	right:-25px;
+	cursor:pointer;
+  z-index:2300;
+}
+.leftBanner .shapeLeft .left{
+	display:block;
+	color:#F2F2F2;
+	font-weight:bold;
+	font-size:25px;
+	margin-top:12px;
+}
+.leftBanner .bannerBox{
+	width:100px;
+	height:180px;
+	margin:0 auto;
+}
+.leftBanner .bannerBox img{
+	position:absolute;
+  left:28px;
+  top:-20px;
+}
+.leftBanner .bannerBox p{
+	color:#fff;
+  text-align:center;
+  margin-top:75px;
+	font-size:16px;
+  font-weight:bold;
+  line-height:25px;
+}
+.leftBanner .bannerBox p span{font-weight:normal;}
+
+.leftBanner .bannerBox a{
+  display:inline-block;
+  background:#fff;
+	width:50px;
+	height:27px;
+  margin-left:22px;
+  margin-top:4px;
+	border-radius:35px;
+  padding-top:5px;
+	border:none;
+	font-size:18px;
+	color:#BF4417;
+	font-weight:bold;
+  text-align:center;
+  text-transform:capitalize;
+}

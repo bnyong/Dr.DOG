@@ -1,0 +1,491 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(bannerTop.css);
+
+
+/* ________________________ BrandStory ________________________ */
+
+
+/* _______________ Section */
+
+/* __________ Bsection 1 */
+
+#Bsection1{
+  height:935px;
+  background:url(../image/brandImage2.png) no-repeat;
+  background-size:cover;
+  opacity:0;
+}
+
+/* __________ Bsection 2 */
+
+#Bsection2{
+  width:100%;
+  height:560px;
+  text-align:center;
+  overflow:hidden;
+  /* background-color: pink; */
+}
+
+/* Bsection2_1 */
+.Bsection2_1{
+  font-size:35px;
+  font-weight:900;
+  line-height:50px;
+  color:rgb(49, 49, 49);
+  margin-top:100px;
+  margin-bottom:100px;
+}
+.s1,.s2,.s3,.s4,.s5,.s6,.s7,.s8,.s9,.s10,.s11,.s12,.s13,.s14,.s15,.s16,.s17,.s18,.s19,.s20,.s21,.s22,.s23,.s24,.s25{opacity:0;}
+
+/* Bsection2_2 */
+.Bsection2_2{
+  font-size:20px;
+  color:#747474;
+  font-weight:600;
+  line-height:42px;
+  margin-bottom:100px;
+  margin-top:200px;
+  opacity:0;
+}
+
+/* __________ Bsection 3 */
+
+#Bsection3{
+  background:url(../image/brandImage3.png) no-repeat;
+  height:545px;
+  background-size:cover;
+  padding-top:45px;
+  opacity:0;
+}
+
+/* Bsection3_wb */
+.Bsection3_wb{
+  width:1200px;
+  height:500px;
+  background:rgba(255,255,255,0.8);
+  margin:0px auto;
+  position:relative;
+  border-radius:10px;
+}
+
+/* Bsection3_1 */
+.Bsection3_1{
+  font-family:Arial, Helvetica, sans-serif;
+  letter-spacing:1px;
+  word-spacing:3px;
+  font-size:45px;
+  font-weight:900;
+  color:rgb(49, 49, 49);
+  text-align:center;
+  padding:35px 0px 20px;
+}
+
+/* Bsection3_2 */
+.Bsection3_2{
+  font-size:16px;
+  text-align:center;
+  font-weight:bold;
+  color:#747474;
+  line-height:35px;
+}
+.Bsection3_2 span{color:rgb(168, 50, 50);}
+
+/* Bsection3_3 */
+
+.Bsection3_3 ul li{
+  float:left;
+  width:300px;
+  height:300px;
+}
+
+.Bsection3_3 ul li:first-child span{
+  position:absolute;
+  bottom:40px;
+  left:50px;
+  text-align:center;
+  line-height:25px;
+  color:#c5c5c5;
+  transition:all 1s;
+  font-size:16px;
+  font-weight:bold;
+}
+.Bsection3_3 ul li:first-child:hover span{
+  color:#747474;
+  font-weight:400;
+  font-weight:bold;
+}
+.Bsection3_3 ul li:first-child{
+  /* background:pink; */
+  background:url(../image/brandClean.png) no-repeat center center;
+  transition:all 1s;
+}
+.Bsection3_3 ul li:first-child:hover{
+  background:url(../image/brandClean_hover.png) no-repeat center center;
+}
+
+.Bsection3_3 ul li:nth-child(2) span{
+  position:absolute;
+  bottom:40px;
+  left:365px;
+  text-align:center;
+  line-height:25px;
+  color:#c5c5c5;
+  transition:all 1s;
+  font-size:16px;
+  font-weight:bold;
+}
+.Bsection3_3 ul li:nth-child(2):hover span{
+  color:#747474;
+  font-weight:400;
+  font-weight:bold;
+}
+.Bsection3_3 ul li:nth-child(2){
+  background:url(../image/brandFresh.png) no-repeat center center;
+  transition:all 1s;
+}
+.Bsection3_3 ul li:nth-child(2):hover{
+  background:url(../image/brandFresh_hover.png) no-repeat center center;
+}
+
+.Bsection3_3 ul li:nth-child(3) span{
+  position:absolute;
+  bottom:40px;
+  left:643px;
+  text-align:center;
+  line-height:25px;
+  color:#c5c5c5;
+  transition:all 1s;
+  font-size:16px;
+  font-weight:bold;
+}
+.Bsection3_3 ul li:nth-child(3):hover span{
+  color:#747474;
+  font-weight:400;
+  font-weight:bold;
+}
+.Bsection3_3 ul li:nth-child(3){
+  background:url(../image/brandTrust.png) no-repeat center center;
+  transition:all 1s;
+}
+.Bsection3_3 ul li:nth-child(3):hover{
+  background:url(../image/brandTrust_hover.png) no-repeat center center;
+}
+
+.Bsection3_3 ul li:last-child span{
+  position:absolute;
+  bottom:40px;
+  left:936px;
+  text-align:center;
+  line-height:25px;
+  color:#c5c5c5;
+  transition:all 1s;
+  font-size:16px;
+  font-weight:bold;
+}
+.Bsection3_3 ul li:last-child:hover span{
+  color:#747474;
+  font-weight:400;
+  font-weight:bold;
+}
+.Bsection3_3 ul li:last-child{
+  background:url(../image/brandEnergy.png) no-repeat center center;
+  transition:all 1s;
+}
+.Bsection3_3 ul li:last-child:hover{
+  background:url(../image/brandEnergy_hover.png) no-repeat center center;
+}
+
+
+/* ________________________ GiveLove ________________________ */
+
+
+/* _______________ GSection */
+
+/* __________ Gsection 1 */
+#Gsection1{position:relative;}
+#Gsection1 img:nth-child(1){position:absolute;display:none;}
+
+/* 중앙 글자 */
+.Gsection1_txt1{
+  position:absolute;
+  top:135px;
+  left:37.5%;
+  font-size:33px;
+  font-weight:800;
+  text-align:center;
+  line-height:45px;
+  color:#343434;
+}
+.Gsection1_txt2{
+  position:absolute;
+  text-align:center;
+  bottom:160px;
+  left:38%;
+  font-size:16px;
+  color:#747474;
+  display:none;
+}
+
+/* 글자 등장 */
+.g1, .g2, .g3, .g4, .g5, .g6, .g7, .g8, .g9, .g10, .g11, .g12, .g13, .g14, .g15, .g16, .g17, .g18, .g19, .g20, .g21, .g22, .g23, .g24, .g25, .g26, .g27, .g28{opacity:0;}
+
+/* __________ Gsection 2 */
+#Gsection2{display:none;}
+
+/* _____ 텝메뉴 */
+#tabmenu{
+  background:url(../image/GiveLoveBg.png) no-repeat;
+  z-index:30;
+}
+#tabmenu .whiteBg{
+  width:100%;
+  height:278px;
+  z-index:20;
+}
+.tabmenu{width:1200px;margin:0 auto;z-index:40;}
+.tabmenu li{
+	width:600px;
+	height:80px;
+	float:left;
+	background:rgb(230, 230, 230);
+	color:rgb(150, 123, 123);
+	font-size: 20px;
+	line-height:80px;
+	text-align:center;
+	font-weight:bold;
+  transition:all 0.2s;
+  cursor:pointer;
+}
+.tabmenu li.selected{  /*현재 선택된 탭메뉴*/
+	background:#fff;
+	color:rgb(168, 50, 50);
+	font-weight:bold;
+}
+
+.panel{
+	clear:both; 
+	padding:100px 0 0 40px;
+}
+
+/* _____ 아코디언 메뉴 */
+#tab1 dl{
+  width:1200px;
+  height:500px;
+  margin:0 auto 100px;
+}
+#tab1 dl dt{
+  position:relative;
+  width:80px;
+  height:500px;
+  border-left:1px solid #000;
+  float:left;
+  box-sizing:border-box;
+  cursor:pointer;
+}
+#tab1 dl dt:nth-of-type(1){background:#f9a107;}
+#tab1 dl dt:nth-of-type(2){background:#d44877;}
+#tab1 dl dt:nth-of-type(3){background:#956db8;}
+#tab1 dl dt:nth-of-type(4){background:#45868c;}
+
+#tab1 dl dt a{
+  position:absolute;
+  top:300px;
+  color:#000;
+  transform:rotate(-90deg);
+  transform-origin:left top;
+  font-size:60px;
+  padding-bottom:30px;
+  font-family: 'Dongle', sans-serif;
+}
+#tab1 dl dt.selected a{ /* jquery에서 불러냄 */
+  cursor:default;
+  color:#fff;
+  font-weight:bold;
+}
+#tab1 dl dd{
+  width:800px;
+  height:500px;
+  /* display:none; */
+  float:left;
+  position:relative;
+  overflow:auto;
+}
+#tab dl dd:first-of-type{display:block;}
+
+.number{
+  font-family: 'Dongle', sans-serif;
+  font-size:100px;
+  font-weight:bold;
+  padding:0px 0px 0px 40px;
+}
+#tab1 dl dd ul li{
+  padding-left:30px;
+  line-height:38px;
+  font-size:16px;
+  color:rgb(114, 113, 113);
+  font-weight:bolder;
+}
+#tab1 dl dd ul{float:left;}
+#tab1 dl dd ul:nth-child(2){margin-top:2px;}
+#tab1 dl dd ul:nth-child(2) li{
+  font-family: 'Dongle', sans-serif;
+  font-weight:900;
+  font-size:30px;
+  color:rgb(56, 56, 56);
+}
+
+/* 글자 위치 */
+#tab1 dl dd ul .tab1_M1{margin-bottom:26px;}
+#tab1 dl dd ul .tab1_1{line-height:23px;margin:8px 0 11px;}
+#tab1 dl dd ul .tab1_M2{margin-bottom:27px;}
+#tab1 dl dd ul .tab1_2{line-height:23px;margin:8px 0 11px;}
+#tab1 dl dd ul .tab1_3{line-height:23px;margin:8px 0 0 0;}
+
+#tab1 dl dd ul .tab2_M1{margin-bottom:25px;}
+#tab1 dl dd ul .tab2_1{line-height:23px;margin:8px 0 11px;}
+#tab1 dl dd ul .tab2_M2{margin:1px 0 1px;}
+
+#tab1 dl dd ul .tab3_M1{margin-bottom:67px;}
+#tab1 dl dd ul .tab3_1{line-height:23px;margin:8px 0 11px;}
+#tab1 dl dd ul .tab3_1 .MaTo{display:inline-block;line-height:18px;margin:6px 0;}
+#tab1 dl dd ul .tab3_2{line-height:23px;margin:11px 0 11px;}
+#tab1 dl dd ul .tab3_3{line-height:23px;margin:11px 0 11px;}
+#tab1 dl dd ul .tab3_M2{margin-bottom:20px;}
+
+#tab1 dl dd ul .tab4_M1{margin-bottom:25px;}
+#tab1 dl dd ul .tab4_1{line-height:23px;margin:8px 0 16px;}
+#tab1 dl dd ul .tab4_M2{margin-bottom:26px;}
+#tab1 dl dd ul .tab4_2{line-height:23px;margin:8px 0 11px;}
+
+/* 이미지 위치 */
+#tab1{position:relative;}
+.tabImage{
+  background:url(../image/tabImage1.png) no-repeat;
+  width:500px;
+  height:397px;
+  position:absolute;
+  opacity:0;
+  bottom:50px;
+  left:800px;
+}
+
+/* _____ 텝메뉴 우측 */
+#tabmenuR{
+  width:1000px;
+  margin:50px auto 100px;
+  text-align:center;
+}
+
+.tabR{display:inline-block;padding-right:55px;}
+.tabR li{
+  float:left;
+	margin:0 50px;
+	display:block;
+	width:120px;
+	height:50px;
+  border:1px solid #d3bca1;
+	font-size:22px;
+	color:#928676;
+	font-family: 'Nanum Myeongjo', serif;
+	font-weight:400;
+  text-align:center;
+  line-height:50px;
+  cursor:pointer;
+  border-radius:15px;
+  transition:all 0.3s;
+}
+.tabR li.selected{
+	background:#928676;
+	color:#fff;
+  font-size:22px;
+	border:1px solid #928676;
+	font-weight:700;
+}
+
+.panelR{
+	clear:both;  /*float문제해결*/
+  padding:20px;
+  padding-bottom:200px;
+}
+
+.gallery{ 
+	width:1000px;
+	height:550px;
+	margin:0 auto;
+	/* background:pink; */
+	position:relative;
+}
+.largeImg li{
+	display:none;
+	position:absolute;
+	top:50px;
+	left:100px;
+}
+.largeImg li:first-child{display:block;}
+
+.thumbs{
+	position:absolute;
+	bottom:-130px;	
+	left:100px;	
+}
+.thumbs li{
+	float:left;
+	margin-right:33px;
+	opacity:0.6;
+}
+.thumbs li:first-child{opacity:1;}
+.thumbs li a img{
+	width:150px;
+	height:150px;
+}
+
+
+/* ________________________ Media ________________________ */
+
+
+/* _______________ MSection */
+#Msection{
+  width:1400px;
+  margin:0 auto;
+  /* height:800px; */
+}
+#Msection img{width:330px;margin-bottom:100px;transition:all 0.3s;}
+#Msection img:hover{transform:scale(1.1);filter:brightness(110%) drop-shadow(2px 2px 2px gray);}
+
+/* flexable 박스로 정렬 */
+.Mcontainer{
+  display:flex;
+  justify-content:space-between;
+}
+
+/* 타이틀부분 */
+#Msection h3{
+  font-size:16px;
+  font-weight:normal;
+  margin:60px 0 100px;
+}
+#Msection h3 .h3_1{
+  font-size:45px;
+  font-weight:700;
+  margin-right:30px;
+}
+#Msection h3 .h3_2{color:red;text-shadow:-1px 1px 2px rgba(0,0,0,0.4);}
+
+/* 버튼 */
+.MsecBtn{
+  width:350px;
+  height:80px;
+  font-size:18px;
+  background:#fff;
+  border-radius:5px;
+  color:#747474;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid #c5c5c5;
+  margin-left:37%;
+  margin-bottom:100px;
+  cursor:pointer;
+}

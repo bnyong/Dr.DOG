@@ -1,0 +1,83 @@
+/* ____________________ footer style */
+
+/* __________ footer 배경 */
+
+footer{
+  width:100%;
+  clear:both;
+  color:#ccc;
+}
+
+#fLeft{
+  float:left;
+  width:50%;
+  height:400px;
+  background:#353131;
+  margin-bottom:60px;
+}
+
+#fRight{
+  float:left;
+  width:50%;
+  height:400px;
+  background:#292626;
+}
+footer .ttl{
+  font-size:15px;
+  font-weight:bold;
+  margin-bottom:40px;
+  color:rgb(226, 225, 225);
+}
+footer span{font-size:11px;}
+
+/* _______________ fLeft */
+
+.fLeft_2{
+  line-height:20px;
+  font-size:12px;
+}
+.fLeft_3{margin-top:20px;}
+.fLeft_4{margin-top:40px;}
+
+#fLeft .fLeft_0{
+  margin-left:310px;
+  margin-top:60px;
+}
+/* sns */
+.fLeft_4 a:hover img{
+  transform:translateY(-3px);
+  transition:all 0.8s;
+}
+
+
+/* _______________ fRight */
+
+/* 오른쪽 왼쪽 */
+.fRight_1{
+  float:left;
+  margin-top:60px;
+  margin-left:80px;
+  padding-right:70px;
+  border-right:1px solid #ccc;
+}
+.fRight_1 li:nth-child(2){
+  font-size:50px;
+  font-weight:bold;
+  margin-bottom:30px;
+}
+.fRight_1 li:last-child{
+  line-height:25px;
+  font-size:12px;
+}
+
+/* 오른쪽 오른쪽 */
+.fRight_2{
+  float:left;
+  margin-top:60px;
+  padding-left:70px;
+}
+.fRight_2 li:nth-child(2){
+  line-height:25px;
+  font-size:12px;
+  margin-bottom:15px;
+}

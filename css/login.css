@@ -1,0 +1,164 @@
+@import url(common.css);
+
+
+/* 헤더_____________________ */
+
+header div{
+  width:600px;
+  height:80px;
+  margin:0 auto;
+  position:relative;
+  /* background:skyblue; */
+}
+
+header div img{
+  position:absolute;
+  top:70px;
+  left:220px;
+  z-index:800000
+}
+.back{position:relative;}
+.back ul{
+  /* background:pink; */
+  width:85px;
+  border-radius:15px;
+  position:absolute;
+  top:50px;
+  left:15px;
+  position:relative;
+  padding-top:2px;
+  padding-left:2px;
+  border:1px solid rgb(236, 236, 236);
+}
+.back ul li{
+  float:left;
+  font-weight:bold;
+}
+.back ul li:nth-child(2){
+  font-size:13px;
+  position:absolute;
+  top:6px;
+  right:13px;
+}
+
+.underline{width:630px;border-bottom:1px solid rgb(219, 219, 219);}
+
+
+/* section _____________________ */
+
+/* form__________ */
+
+fieldset{
+  width:450px;
+  margin:60px auto 0px;
+  height:300px;
+  border-radius:15px;
+  border:1px solid #999999;
+}
+fieldset p:not(:nth-child(3)){
+  width:350px;
+  height:50px;
+  margin:0 auto;
+}
+fieldset p:nth-child(3){
+  margin:0 auto;
+  width:350px;
+  height:30px;
+  margin-top:20px;
+}
+fieldset p:first-child{margin-top:40px;}
+input[type=text],input[type=password]{
+  width:350px;
+  height:50px;
+  font-size:16px;
+  border:1px solid #ccc;
+  padding-left:15px;
+  box-sizing:border-box;
+}
+input[type=text]{border-radius:5px 5px 0 0;}
+input[type=password]{border-radius:0 0 5px 5px;margin-top:1px;}
+
+input:focus{outline:1px solid #ff6600;}
+
+input[type=checkbox]{margin-right:2px;}
+
+/* 로그인버튼 */
+.subBtn{width:350px;margin:0 auto;}
+input[type=submit]{
+  width:350px;
+  height:50px;
+  font-size:18px;
+  background:#ccc;
+  border:none;
+  cursor:pointer;
+  border-radius:5px;
+  margin-top:35px;
+  transition:all 0.1s;
+}
+.subBtn input[type=submit]:hover{
+  background:rgb(138, 138, 138);
+  color:#fff;
+}
+
+/* 아이디 비밀번호 회원가입 __________ */
+
+.IdPwRe ul{
+  width:450px;
+  margin:0 auto;
+}
+.IdPwRe ul li{
+  float:left;
+  margin-top:22px;
+  color:rgb(66, 66, 66);
+  padding:0 20px;
+  border-right:1px solid #ccc;
+}
+.IdPwRe ul li:first-child{margin-left:50px;}
+.IdPwRe ul li:last-child{border:none;}
+
+/* 다른 계정으로 로그인하기 __________ */
+
+.NaGologin{
+  width:480px;
+  margin:50px auto 0;
+/*   background:pink; */
+}
+.NaGologin a span{
+  font-size:16px;
+  font-weight:bold;
+  vertical-align:bottom;
+  margin:0 14px;
+  display:inline-block;
+  margin-bottom:7px;
+  color:#fff;
+}
+
+/* naver */
+.NaGologin a:first-child{
+  background:#0487D9;
+  float:left;
+  width:235px;
+  text-align:center;
+  border-radius:50px;
+  height:40px;
+  padding-top:5px;
+  transition:all 1s;
+}
+.NaGologin a:first-child:hover{
+  transform:translateX(-5px);
+}
+
+/* google */
+.NaGologin a:last-child{
+  background:#0074D4;
+  width:220px;
+  text-align:center;
+  border-radius:50px;
+  height:40px;
+  padding-top:5px;
+  float:right;
+  transition:all 1s;
+}
+.NaGologin a:last-child:hover{
+  transform:translateX(5px);
+}
