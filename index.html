@@ -4,67 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <title>DrDOG</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-  <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </head>
+
 <body onload="openPopup();">
-
-<!--Popup Start-->
-<div id="popup">
-	<script type="text/javascript" src="js/m_layer.js"></script><!-- 팝업창 스트립트(반드시 연결)-->
-	<div class="body">
-		<div class="btn_close">
-			<input name="checkbox" type="checkbox" style="margin-top:3px;" onClick="
-				if (this.checked === true)
-				{
-					setCookie('aaaa', 'done', 1);
-					document.all.popup.style.visibility='hidden';
-				}
-				">
-			<span class="tt">오늘 하루 보지 않기</span><i class="material-icons">clear</i>
-		</div>
-		<div class="pop_content">
-			<ul class="clear">
-				<li><a href="communityEvent_7.html"><img src="image/popUp1.png" alt="메인팝업창"></a></li>
-				<li><img src="image/popUp2.png" alt="메인팝업창"></li>
-				<li><img src="image/popUp3.png" alt="메인팝업창"></li>
-			</ul>
-		</div>			
-	</div>
-</div>
-<!--Popup End-->
-
-  <!-- top btn -->
-  <div id="topBtn"><a href="#" class="goTop"></a></div>
-  <div id="phoneBtn"><div class="phoneBtn_box"><a href="https://pf.kakao.com/_xgxlxbxaE/chat" target="_blank"><span class="phone_hover">상담하기</span><span class="material-symbols-outlined icon">support_agent</span></a></div></div>
-
-  <!-- banner -->
-  <div class="leftBanner">
-    <span class="shapeLeft"><span class="material-symbols-outlined left">keyboard_arrow_left</span></span>
-    <div class="bannerBox">
-      <img src="image/banSample.png" alt="샘플 사료">
-      <p>1만원 쿠폰<br><span>받으러 가기</span></p>
-      <a href="communityEvent_2.html">go</a>
-    </div>
-  </div>
-
   <header>
-    <div id="gnb" class="clear">
+    <div class="gnb-wrap">
       <h1><a href="index.html"><img src="image/logo.png" alt="logo"></a></h1>
-      <div class="topmenu">
-        <ul class="topmenu_1">
-          <li><a href="brandStory.html">브랜드<span></span></a>
-            <ul class="sub1">
+      <nav>
+        <ul class="gnb-menu">
+          <li>
+            <a href="brandStory.html">브랜드<span></span></a>
+            <ul class="gnb-sub-menu">
               <li><a href="brandStory.html">브랜드 스토리</a></li>
               <li><a href="GiveLove.html">Give &amp; Love</a></li>
               <li><a href="media.html">미디어</a></li>
             </ul>
           </li>
-          <li><a href="product.html">제품<span></span></a>
-            <ul class="sub2">
+          <li>
+            <a href="product.html">제품<span></span></a>
+            <ul class="gnb-sub-menu">
               <li><a href="product_1.html">사료</a></li>
               <li><a href="product_2.html">화식</a></li>
               <li><a href="product_3.html">간식</a></li>
@@ -72,23 +38,25 @@
               <li><a href="product_5.html">용품</a></li>
             </ul>
           </li>
-          <li><a href="communityEvent.html">커뮤니티<span></span></a>
-            <ul class="sub3">
+          <li>
+            <a href="communityEvent.html">커뮤니티<span></span></a>
+            <ul class="gnb-sub-menu">
               <li><a href="communityEvent.html">이벤트</a></li>
             </ul>
           </li>
           <li><a href="membership.html">멤버쉽<span></span></a>
-            <ul class="sub4">
+            <ul class="gnb-sub-menu">
               <li><a href="membership.html">멤버쉽 혜택</a></li>
             </ul>
           </li>
-          <li><a href="review.html">고객리뷰<span></span></a>
-            <ul class="sub5">
+          <li>
+            <a href="review.html">고객리뷰<span></span></a>
+            <ul class="gnb-sub-menu">
               <li><a href="review.html">고객리뷰</a></li>
             </ul>
           </li>
         </ul>
-      </div>
+      </nav>
       <div class="utilmenu">
         <input type="search" placeholder="검색어를 입력해주세요">
         <span class="underline"></span>
@@ -96,7 +64,6 @@
         <a href="login.html"><span class="material-symbols-outlined icon">person</span></a>
       </div>
     </div>
-    <div class="bg_box"></div>
   </header>
   <div class="indent headersize">해더가 뜬 만큼 공간을 차지할 박스</div>
 
@@ -108,10 +75,10 @@
           <li class="i2"><a href="product_2.html"><img src="image/visual_2.png" alt="image2"></a></li>
           <li class="i3"><a href="product.html"><img src="image/visual_3.png" alt="image3"></a></li>
           <li class="i4"><a href="product_1.html"><img src="image/visual_4.png" alt="image4"></a></li>
-          <li class="i5"><a href="product_3.html"><img src="image/visual_5.png" alt="image5"></a></li> 
+          <li class="i5"><a href="product_3.html"><img src="image/visual_5.png" alt="image5"></a></li>
         </ul>
       </div>
-  
+
       <div class="slideon_btn">
         <ul>
           <li class="indent activeon">m1</li>
@@ -121,28 +88,30 @@
           <li class="indent">m5</li>
         </ul>
       </div>
-  
+
       <div class="sideon_btn">
         <div class="preon indent"> prev </div>
         <div class="nexon indent"> next </div>
       </div>
-    </div> 
+    </div>
   </nav>
 
-  <section>
-    <div id="section1">
+  <main>
+    <section id="section1">
       <img src="image/eatFood.png" alt="닥터독 식단 짜기" title="기존 홈페이지로 이동합니다.">
       <div><a href="http://newdocterdog.webmoa21.co.kr/index.asp" target="_blank">식단 설계하기</a></div>
-    </div>
+    </section>
 
-    <div id="section2">
+    <section id="section2">
       <div>
         <div class="box1">
           <ul>
             <li class="f1"><a href="product_1.html"><img src="image/mainProduct1.png" alt="사료"></a></li>
             <li><a href="product_1.html"><img src="image/mainProduct1.png" alt="사료"></a></li>
           </ul>
-          <a href="product_1.html"><p class="box1_text">사료</p></a>
+          <a href="product_1.html">
+            <p class="box1_text">사료</p>
+          </a>
         </div>
         <div class="boxM">
           <div class="box2">
@@ -150,14 +119,18 @@
               <li><a href="product_2.html"><img src="image/mainProduct2.png" alt="화식"></a></li>
               <li class="f1"><a href="product_2.html"><img src="image/mainProduct2.png" alt="화식"></a></li>
             </ul>
-            <a href="product_2.html"><p class="box2_text">화식</p></a>
+            <a href="product_2.html">
+              <p class="box2_text">화식</p>
+            </a>
           </div>
           <div class="box3">
             <ul>
               <li><a href="product_3.html"><img src="image/mainProduct3.png" alt="간식"></a></li>
               <li class="f1"><a href="product_3.html"><img src="image/mainProduct3.png" alt="간식"></a></li>
             </ul>
-            <a href="product_3.html"><p class="box3_text">간식</p></a>
+            <a href="product_3.html">
+              <p class="box3_text">간식</p>
+            </a>
           </div>
         </div>
         <div class="boxF">
@@ -166,20 +139,24 @@
               <li><a href="product_4.html"><img src="image/mainProduct4.png" alt="영양제"></a></li>
               <li class="f1"><a href="product_4.html"><img src="image/mainProduct4.png" alt="영양제"></a></li>
             </ul>
-            <a href="product_4.html"><p class="box4_text">영양제</p></a>
+            <a href="product_4.html">
+              <p class="box4_text">영양제</p>
+            </a>
           </div>
           <div class="box5">
             <ul>
               <li><a href="product_5.html"><img src="image/mainProduct5.png" alt="용품"></a></li>
               <li class="f1"><a href="product_5.html"><img src="image/mainProduct5.png" alt="용품"></a></li>
             </ul>
-            <a href="product_5.html"><p class="box5_text">용품</p></a>
+            <a href="product_5.html">
+              <p class="box5_text">용품</p>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-    
-    <div id="section3">
+    </section>
+
+    <section id="section3">
       <div>
         <h2>POPULAR RECIPES</h2>
         <div class="bestM clear">
@@ -212,12 +189,14 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div id="section4">
+    <section id="section4">
       <div class="section4_box">
         <h3>DrDOG<br><span class="text">Best<br>Review</span></h3>
-        <a href="review.html"><p class="cursor"></p></a>
+        <a href="review.html">
+          <p class="cursor"></p>
+        </a>
         <div id="sec4_fadeShow">
           <div class="sec4_changeimg">
             <ul>
@@ -259,8 +238,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <div id="fLeft">
@@ -274,9 +253,12 @@
           대표이사 : 김형우 &nbsp;|&nbsp; 개인정보관리자 : 박연정</div>
         <div class="fLeft_3">&copy; ilhyun Corporation. all rights reserved.</div>
         <div class="fLeft_4">
-          <a href="https://ko-kr.facebook.com/okdoctordog/" target="_blank"><img src="image/facebook.png" alt="facebook"></a>
-          <a href="https://www.instagram.com/doctordog_korea/?h1=ko" target="_blank"><img src="image/instar.png" alt="instargram"></a>
-          <a href="https://www.youtube.com/channel/UCFOuQToD-Ces7c1CxMu5SRA" target="_blank"><img src="image/utube.png" alt="utube"></a>
+          <a href="https://ko-kr.facebook.com/okdoctordog/" target="_blank"><img src="image/facebook.png"
+              alt="facebook"></a>
+          <a href="https://www.instagram.com/doctordog_korea/?h1=ko" target="_blank"><img src="image/instar.png"
+              alt="instargram"></a>
+          <a href="https://www.youtube.com/channel/UCFOuQToD-Ces7c1CxMu5SRA" target="_blank"><img src="image/utube.png"
+              alt="utube"></a>
         </div>
       </div>
     </div>
@@ -286,24 +268,62 @@
           <li class="ttl">고객센터</li>
           <li>1544-0322</li>
           <li>평일 &nbsp;|&nbsp; 오전 10:30 ~ 오후 05:00<br>
-          점심시간 &nbsp;|&nbsp; 오전 11:30 ~ 오후 12:30<br>
-          <span>(주말 및 공휴일 휴무)</span></li>
+            점심시간 &nbsp;|&nbsp; 오전 11:30 ~ 오후 12:30<br>
+            <span>(주말 및 공휴일 휴무)</span>
+          </li>
         </ul>
       </div>
       <div class="fRight_2">
         <ul>
           <li class="ttl">택배 배송마감안내</li>
           <li>평일 &nbsp;|&nbsp; 오후 2시 마감<br>
-          토요일 &nbsp;|&nbsp; 오후 1시 마감</li>
+            토요일 &nbsp;|&nbsp; 오후 1시 마감</li>
           <li><span>고객센터는 토요일 휴무입니다.</span></li>
         </ul>
       </div>
     </div>
-    
   </footer>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
-  <script src="js/index.js"></script>
+
+  <!-- banner -->
+  <div class="leftBanner">
+    <span class="shapeLeft"><span class="material-symbols-outlined left">keyboard_arrow_left</span></span>
+    <div class="bannerBox">
+      <img src="image/banSample.png" alt="샘플 사료">
+      <p>1만원 쿠폰<br><span>받으러 가기</span></p>
+      <a href="communityEvent_2.html">go</a>
+    </div>
+  </div>
+
+  <!-- top btn -->
+  <div id="topBtn"><a href="#" class="goTop"></a></div>
+  <div id="phoneBtn">
+    <div class="phoneBtn_box"><a href="https://pf.kakao.com/_xgxlxbxaE/chat" target="_blank"><span
+          class="phone_hover">상담하기</span><span class="material-symbols-outlined icon">support_agent</span></a></div>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup">
+    <script type="text/javascript" src="js/m_layer.js"></script><!-- 팝업창 스트립트(반드시 연결)-->
+    <div class="body">
+      <div class="btn_close">
+        <input name="checkbox" type="checkbox" style="margin-top:3px;" onClick="
+				if (this.checked === true)
+				{
+					setCookie('aaaa', 'done', 1);
+					document.all.popup.style.visibility='hidden';
+				}
+				">
+        <span class="tt">오늘 하루 보지 않기</span><i class="material-icons">clear</i>
+      </div>
+      <div class="pop_content">
+        <ul class="clear">
+          <li><a href="communityEvent_7.html"><img src="image/popUp1.png" alt="메인팝업창"></a></li>
+          <li><img src="image/popUp2.png" alt="메인팝업창"></li>
+          <li><img src="image/popUp3.png" alt="메인팝업창"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
