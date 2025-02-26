@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DrDOG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="../assets/js/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="../assets/js/index.js"></script>
+
+  <script type="text/javascript">
+    var getCookie = function (cname) {
+      var name = cname + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+      }
+      return "";
+    }
+
+    // 24시간 기준 쿠키 설정하기  
+    var setCookie = function (cname, cvalue, exdays) {
+      var todayDate = new Date();
+      todayDate.setTime(todayDate.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
+      document.cookie = cname + "=" + cvalue + "; " + expires;
+    }
+
+    var popupClose = function () {
+      if ($("input[name='todayClose']").is(":checked") == true) {
+        setCookie("close", "Y", 1);   //기간( ex. 1은 하루, 7은 일주일)
+      }
+      $("#popup").hide();
+    }
+
+    $(document).ready(function () {
+      var cookiedata = document.cookie;
+      if (cookiedata.indexOf("close=Y") < 0) {
+        $("#popup").show();
+      } else {
+        $("#popup").hide();
+      }
+      $("#closeBtn").click(function () {
+        popupClose();
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="gnb-wrap">
+      <h1><a href="index.html"><img src="../assets/images/icon/icon_logo.png" alt="logo"></a></h1>
+      <nav>
+        <ul class="gnb-menu">
+          <li>
+            <a href="brandStory.html">브랜드<span></span></a>
+            <ul class="gnb-sub-menu">
+              <li><a href="brandStory.html">브랜드 스토리</a></li>
+              <li><a href="GiveLove.html">Give &amp; Love</a></li>
+              <li><a href="media.html">미디어</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="product.html">제품<span></span></a>
+            <ul class="gnb-sub-menu">
+              <li><a href="product_1.html">사료</a></li>
+              <li><a href="product_2.html">화식</a></li>
+              <li><a href="product_3.html">간식</a></li>
+              <li><a href="product_4.html">영양제</a></li>
+              <li><a href="product_5.html">용품</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="communityEvent.html">커뮤니티<span></span></a>
+            <ul class="gnb-sub-menu">
+              <li><a href="communityEvent.html">이벤트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="membership.html">멤버쉽<span></span></a>
+            <ul class="gnb-sub-menu">
+              <li><a href="membership.html">멤버쉽 혜택</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="review.html">고객리뷰<span></span></a>
+            <ul class="gnb-sub-menu">
+              <li><a href="review.html">고객리뷰</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="utilmenu">
+        <fieldset>
+          <legend class="blind">검색 폼</legend>
+          <form action="">
+            <label><input type="search" placeholder="검색어를 입력해주세요"></label>
+            <button type="submit"><img src="../assets/images/icon/icon_search.png" alt="돋보기 버튼"></button>
+          </form>
+        </fieldset>
+        <a href="login.html" class="mypage"><img src="../assets/images/icon/icon_user.png" alt="마이 페이지"></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="container">
+      <section class="visual-wrap">
+        <div class="slide-list">
+          <div><a href="communityEvent_1.html"><img src="../assets/images/main/visual_1.png" alt="image1"></a>
+          </div>
+          <div><a href="product_2.html"><img src="../assets/images/main/visual_2.png" alt="image2"></a></div>
+          <div><a href="product.html"><img src="../assets/images/main/visual_3.png" alt="image3"></a></div>
+          <div><a href="product_1.html"><img src="../assets/images/main/visual_4.png" alt="image4"></a></div>
+          <div><a href="product_3.html"><img src="../assets/images/main/visual_5.png" alt="image5"></a></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-wrap">
+          <article class="eat-banner">
+            <a href="#none" target="_blank"><span>식단 설계하기</span></a>
+            <div class="blind">
+              <p>
+                우리아이에게 딱 맞는 닥터독 식단은? 영양맞춤 식단, 닥터독이 도와드려요.
+              </p>
+            </div>
+          </article>
+
+          <article class="product-category">
+            <ul class="grid-box top">
+              <li>
+                <a href="product_1.html">
+                  <img src="../assets/images/main/product_category_1.png" alt="사료">
+                  <span class="text">사료</span>
+                </a>
+              </li>
+              <li>
+                <a href="product_2.html">
+                  <img src="../assets/images/main/product_category_2.png" alt="화식">
+                  <span class="text">화식</span>
+                </a>
+              </li>
+              <li>
+                <a href="product_3.html">
+                  <img src="../assets/images/main/product_category_3.png" alt="간식">
+                  <span class="text">간식</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="grid-box bottom">
+              <li>
+                <a href="product_4.html">
+                  <img src="../assets/images/main/product_category_4.png" alt="영양제">
+                  <span class="text">영양제</span>
+                </a>
+              </li>
+              <li>
+                <a href="product_5.html">
+                  <img src="../assets/images/main/product_category_5.png" alt="영양제">
+                  <span class="text">용품</span>
+                </a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="recipe">
+          <h2>POPULAR RECIPES</h2>
+          <div class="section-wrap">
+            <ul class="flex-box">
+              <li>
+                <img src="../assets/images/main/recipe_best_01.png" alt="">
+                <span class="title">피부모질 닥터독 사료</span>
+                <a href="product_1.html"><span>View more</span></a>
+              </li>
+              <li>
+                <img src="../assets/images/main/recipe_best_02.png" alt="">
+                <span class="title">시니어 닥터독 사료</span>
+                <a href="product_1.html"><span>View more</span></a>
+              </li>
+              <li>
+                <img src="../assets/images/main/recipe_best_03.png" alt="">
+                <span class="title">보양식 황태탕</span>
+                <a href="product_1.html"><span>View more</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="review">
+          <div class="section-wrap">
+            <h2>DrDog Best Review</h2>
+            <div class="slide-review">
+              <div><a href="review_1.html"><img src="../assets/images/main/review_best_01.png"
+                    alt="구매자 베스트 리뷰 - 눈물 좋아졌어요"></a></div>
+              <div>
+                <a href="review_2.html"><img src="../assets/images/main/review_best_02.png"
+                    alt="구매자 베스트 리뷰 - 닥터독과의 인연"></a>
+              </div>
+              <div>
+                <a href="review_3.html"><img src="../assets/images/main/review_best_03.png"
+                    alt="구매자 베스트 리뷰 - 눈도 반짝반짝!!"></a>
+              </div>
+              <div>
+                <a href="review_4.html"><img src="../assets/images/main/review_best_04.png"
+                    alt="구매자 베스트 리뷰 - 눈물에 최고에요~*"></a>
+              </div>
+              <div>
+                <a href="review_5.html"><img src="../assets/images/main/review_best_05.png"
+                    alt="구매자 베스트 리뷰 - 눈물자국 개선됐어요"></a>
+              </div>
+              <div>
+                <a href="review_6.html"><img src="../assets/images/main/review_best_06.png"
+                    alt="구매자 베스트 리뷰 - 사료 참 맘에 드네요!!"></a>
+              </div>
+              <div>
+                <a href="review_7.html"><img src="../assets/images/main/review_best_07.png"
+                    alt="구매자 베스트 리뷰 - 울강쥐사료^^"></a>
+              </div>
+              <div>
+                <a href="review_8.html"><img src="../assets/images/main/review_best_08.png"
+                    alt="구매자 베스트 리뷰 - ㅁ눈물많은 푸들에게 너무 딱인 사료ㅁ"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <div class="left-container">
+        <h2>주식회사 일현코퍼레이션</h2>
+        <address>
+          04799 서울특별시 성동구 아차산로15길 52 (성수동2가) 삼환디지털벤처타워 902-1호<br>
+          이메일 : doctordog@ilhyun.co.kr<br>
+          사업자번호 : 206-86-61496 &nbsp;|&nbsp; 통신판매신고번호 : 제 2012-서울성동-0364<br>
+          호스팅제공자 : 카페24 &nbsp;|&nbsp; KG 이니시스 매매보호&#40;에스크로&#41;서비스 가입<br>
+          대표이사 : 김형우 &nbsp;|&nbsp; 개인정보관리자 : 박연정
+        </address>
+        <span class="copy">&copy; ilhyun Corporation. all rights reserved.</span>
+        <ul class="sns-box">
+          <li>
+            <a href="https://blog.naver.com/okdoctordog" target="_blank"><img src="../assets/images/icon/icon_blog.png"
+                alt="blog"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/doctordog_korea/?hl=ko" target="_blank"><img
+                src="../assets/images/icon/icon_instagram.png" alt="instargram"></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCFOuQToD-Ces7c1CxMu5SRA" target="_blank"><img
+                src="../assets/images/icon/icon_youtube.png" alt="youtube"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-container">
+        <div class="customer-center">
+          <h2>고객센터</h2>
+          <span class="number">1544-0322</span>
+          <p>
+            평일 &nbsp;|&nbsp; 오전 10:30 ~ 오후 05:00<br>
+            점심시간 &nbsp;|&nbsp; 오전 11:30 ~ 오후 12:30<br>
+            &#40;주말 및 공휴일 휴무&#41;
+          </p>
+        </div>
+        <div class="delivery">
+          <h2>택배 배송마감안내</h2>
+          <p>
+            평일 &nbsp;|&nbsp; 오후 2시 마감<br>
+            토요일 &nbsp;|&nbsp; 오후 1시 마감
+          </p>
+          <p>
+            고객센터는 토요일 휴무입니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="quick-menu">
+    <a href="https://pf.kakao.com/_xgxlxbxaE" target="_blank" id="counsel"><img
+        src="../assets/images/icon/icon_kakao.png" alt="카카오 상담하기"></a>
+    <button id="topBtn"><img src="../assets/images/icon/icon_top.png" alt="top 버튼"></button>
+  </div>
+
+  <article id="popup">
+    <div class="popup-wrap">
+      <ul class="contents">
+        <li>
+          <a href="communityEvent_7.html"><img src="../assets/images/main/main_popup_01.png"
+              alt="수의사 공동 연구 개발 반려동물 데일리 영양제 PAWVITA 런칭 이벤트 ~ 04.30. SAT. 10만원 이상 실 결제시 포비타 본품 전원 증정"></a>
+        </li>
+        <li>
+          <img src="../assets/images/main/main_popup_02.png" alt="">
+          <div class="blind">
+            <p>
+              가격 인상 안내문
+            </p>
+            <p>
+              저희 닥터독을 사랑해 주시는 고객님들께 진심으로 감사드립니다.
+            </p>
+            <p>
+              닥터독은 지난 2013년 런칭 이후 현재까지 고개님들의 또 하나의 가족과 함께한다는 마음으로 제품 가격을 유지하였습니다.
+            </p>
+            <p>
+              그러나 지속적인 원료 및 인건비 상승 등의 요인으로 부득이하게 사료 제품 가격을 인상하게 되었습니다.
+            </p>
+            <p>
+              닥터독을 아껴주시고 성원을 보내주시는 고객님들께 가격인상을 안내하게 되어 참으로 죄송한 마음이 앞섭니다.
+            </p>
+            <p>
+              반려동물에 대한 진심을 담아 양질의 제품을 변함없이 제공하고자 불가피하게 내린 결정이오니 깊은 이해와 양해 부탁드립니다.
+            </p>
+            <p>
+              2022년 3월 2일 주문건부터 사료제품에 한하여 인상된 가격으로 적용됩니다.
+            </p>
+            <p>
+              사료 2kg기준/정기배송 포함 현제 29,500원에서 32,500원으로 변경
+            </p>
+            <p>
+              감사합니다.
+            </p>
+          </div>
+        </li>
+        <li>
+          <img src="../assets/images/main/main_popup_03.png"
+            alt="닥터독 클린패드 패키지 리뉴얼 안내. 3월 28일부터 변경된 패키지로 순차 출고되며 대형/중형/소형 별로 출고 일자는 상이할 수 있습니다.">
+        </li>
+      </ul>
+      <div class="close-box">
+        <form name="popup_Form">
+          <input type="checkbox" name="todayClose" id="todayClose">
+          <label for="todayClose">오늘하루 그만보기</label>
+          <button type="button" id="closeBtn"><img src="../assets/images/icon/icon_close.png" alt="닫기 버튼"></button>
+        </form>
+      </div>
+    </div>
+  </article>
+</body>
+
+</html>
