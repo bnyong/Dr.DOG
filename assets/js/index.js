@@ -46,6 +46,18 @@ $(document).ready(function () {
 		$('html,body').animate({ scrollTop: '0' });
 	});
 
+	/* gnb 햄버거 버튼 */
+	$('.btn-gnb-open').on('click', function () {
+		$('.gnb-wrap').show();
+		$('.gnb-wrap').delay(100).animate({ right: '0px' }, 80);
+		$('html, body').css({ overflow: 'hidden' });
+	});
+	$('.btn-gnb-close').on('click', function () {
+		$('.gnb-wrap').show();
+		$('.gnb-wrap').delay(100).animate({ right: '-100%' }, 80);
+		$('html, body').css({ overflow: '' });
+	});
+
 	/* 
 	
 	아래는 정리 필요
@@ -59,22 +71,6 @@ $(document).ready(function () {
 	$('.btn_close').click(function () {
 		// close 눌렀을 때
 		$('#popup').hide(); // popup 안보이게 함
-	});
-
-	// 좌측 leftBanner 고정배너 LeftRight________________
-
-	chk2 = true;
-
-	$('.leftBanner .shapeLeft').click(function () {
-		if (chk2) {
-			$('.shapeLeft').html("<span class='material-symbols-outlined left'>keyboard_arrow_right</span>");
-			$('.leftBanner').stop().animate({ left: '-100px' }, 500);
-			chk2 = false;
-		} else {
-			$('.shapeLeft').html("<span class='material-symbols-outlined left'>keyboard_arrow_left</span>");
-			$('.leftBanner').stop().animate({ left: '0px' }, 500);
-			chk2 = true;
-		}
 	});
 
 	// section 2 상하좌우방향 움직이기_________________________________
