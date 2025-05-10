@@ -220,61 +220,8 @@ section + section {
 	margin: 0px 20px;
 }
 
-/* popup */
-#popup {
-	display: none;
-	position: fixed;
-	inset: 0 0 0 0;
-	z-index: 10000;
-	background-color: rgba(0, 0, 0, 0.8);
-}
-#popup .popup-wrap {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 1000px;
-}
-#popup .contents {
-	display: flex;
-}
-#popup .close-box {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	gap: 5px;
-	padding: 5px;
-	background-color: #252525;
-}
-#popup .close-box label {
-	color: #fff;
-}
-#popup .close-box input[type='checkbox'] {
-	margin-bottom: 3px;
-}
-#popup .close-box button {
-	width: 15px;
-	margin-left: 10px;
-}
-
 @media screen and (max-width: 1024px) {
-	#popup .popup-wrap {
-		width: calc(100% - 20px);
-	}
 }
 
 @media screen and (max-width: 768px) {
-	#popup .contents {
-		overflow-x: scroll;
-	}
-	#popup .contents li {
-		flex-shrink: 0;
-		width: 350px;
-	}
-	#popup .close-box label {
-		font-size: 14px;
-	}
-	#popup .close-box input[type='checkbox'] {
-		margin-bottom: 0px;
-	}
 }
